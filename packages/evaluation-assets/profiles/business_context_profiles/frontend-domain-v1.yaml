@@ -1,0 +1,10 @@
+id: frontend-domain-v1
+load_workspace_context: false
+repo_map:
+  enabled: false
+include_primary_requirement: true
+include_supporting_docs: false
+include_api_contracts: false
+include_design_notes: false
+include_screenshots: false
+skill_mode: selected

@@ -1,0 +1,8 @@
+{
+  "name": "button-skill-public-demo-v2-v4-r3",
+  "mode": "business_fine_tuning",
+  "replica_count": 3,
+  "case_ids": ["FE_BUTTON_01"],
+  "baseline_variant_id": "ft-button-skill-v2",
+  "comparison_variant_ids": ["ft-button-skill-v3", "ft-button-skill-v4"]
+}

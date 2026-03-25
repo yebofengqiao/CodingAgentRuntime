@@ -1,0 +1,25 @@
+{
+  "name": "@openhands-rl/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run --environment node"
+  },
+  "dependencies": {
+    "@openhands-rl/backend-core": "workspace:*",
+    "@openhands-rl/runtime-core": "workspace:*",
+    "bullmq": "^5.46.1",
+    "ioredis": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.2",
+    "vitest": "^3.2.4"
+  }
+}

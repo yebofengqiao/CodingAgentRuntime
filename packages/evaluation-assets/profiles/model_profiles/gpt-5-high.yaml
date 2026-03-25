@@ -1,0 +1,6 @@
+id: gpt-5-high
+provider: openai
+name: ${LLM_MODEL}
+effort: high
+temperature: 0
+token_budget: 32768

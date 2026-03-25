@@ -1,0 +1,33 @@
+{
+  "name": "@openhands-rl/runtime-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/runtime.ts",
+  "types": "src/runtime.ts",
+  "exports": {
+    ".": "./src/runtime.ts",
+    "./runtime": "./src/runtime.ts",
+    "./Agent": "./src/Agent/index.ts",
+    "./Conversation": "./src/Conversation/index.ts",
+    "./Context": "./src/Context/index.ts",
+    "./Tool": "./src/Tool/index.ts",
+    "./Event": "./src/Event/index.ts",
+    "./Event/callback": "./src/Event/callback.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --environment node"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "openai": "^4.89.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.2",
+    "vitest": "^3.2.4"
+  }
+}

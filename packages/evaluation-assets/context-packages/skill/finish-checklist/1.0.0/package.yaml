@@ -1,0 +1,9 @@
+name: finish-checklist
+version: 1.0.0
+kind: skill
+entry: context-packages/skill/finish-checklist/1.0.0/finish-checklist/SKILL.md
+description: Finish and validation checklist for coding evals.
+owner: frontend-platform
+tags:
+  - skill
+  - validation

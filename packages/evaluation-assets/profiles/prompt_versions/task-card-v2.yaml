@@ -1,0 +1,21 @@
+id: task-card-v2
+system_template: prompts/system/base_system.md
+system_message_suffix_template: prompts/developer/task_card_v2.md
+task_card:
+  enabled: true
+  include_sections:
+    - goal
+    - acceptance_criteria
+    - editable_scope
+    - protected_scope
+    - expected_artifacts
+    - expected_skills
+    - expected_tools
+    - finish_checklist
+    - task_notes
+finish_checklist:
+  enabled: true
+  items:
+    - Run relevant validation before finishing.
+    - Confirm protected scope was not modified.
+    - Write the evaluation result payload before the final response.

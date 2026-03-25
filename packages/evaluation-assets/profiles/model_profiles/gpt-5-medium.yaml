@@ -1,0 +1,6 @@
+id: gpt-5-medium
+provider: openai
+name: ${LLM_MODEL}
+effort: medium
+temperature: 0
+token_budget: 32768

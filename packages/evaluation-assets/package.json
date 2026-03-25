@@ -1,0 +1,6 @@
+{
+  "name": "@openhands-rl/evaluation-assets",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Versioned evaluation cases, variants, profiles, requirements, repos, and context packages for the TS evaluation system."
+}

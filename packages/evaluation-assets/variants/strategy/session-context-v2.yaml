@@ -1,0 +1,18 @@
+id: session-context-v2
+description: >
+  Comparison variant that enables runtime condensation and recent failure memory for longer runs.
+prompt_version: base-v1
+enabled_skills:
+  - repo-guide
+  - finish-checklist
+model_profile: gpt-5-medium
+business_context_profile: frontend-domain-v1
+session_context_policy: compact-v1
+mcp_profile: default-v1
+sandbox_profile: local-workspace-v1
+case_bindings:
+  resource_filters:
+    include: []
+    exclude: []
+  skill_subset: []
+  task_notes: []

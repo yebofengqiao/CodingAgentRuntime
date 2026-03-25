@@ -1,0 +1,9 @@
+name: frontend-base
+version: 1.0.0
+kind: repo-policy
+entry: context-packages/repo-policy/frontend-base/1.0.0/AGENTS.md
+description: Base frontend repo policy for demo-shop tasks.
+owner: frontend-platform
+tags:
+  - repo-policy
+  - frontend

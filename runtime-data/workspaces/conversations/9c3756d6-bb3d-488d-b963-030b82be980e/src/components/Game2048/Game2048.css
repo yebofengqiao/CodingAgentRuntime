@@ -1,0 +1,114 @@
+.game-2048 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.game-2048 h1 {
+  font-size: 48px;
+  color: #776e65;
+  margin-bottom: 20px;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+  color: #776e65;
+  background-color: #bbada0;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.restart-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #8f7a66;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.restart-btn:hover {
+  background-color: #9f8b77;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 15px;
+  background-color: #bbada0;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(238, 228, 218, 0.73);
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #776e65;
+  z-index: 100;
+}
+
+/* 添加动画效果 */
+@keyframes appear {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.tile {
+  animation: appear 0.2s;
+}
+
+/* 响应式设计 */
+@media (max-width: 500px) {
+  .board {
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(4, 70px);
+    gap: 10px;
+    padding: 10px;
+  }
+  .tile {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+  }
+  .score-container {
+    width: 320px;
+  }
+  .game-over {
+    font-size: 32px;
+  }
+}

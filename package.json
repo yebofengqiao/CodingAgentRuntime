@@ -1,0 +1,27 @@
+{
+  "name": "openhands-rl-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.26.1",
+  "scripts": {
+    "dev:front": "pnpm --filter @openhands-rl/conversation-frontend dev",
+    "dev:eval": "pnpm --filter @openhands-rl/evaluation-frontend dev",
+    "dev:conversation-api": "pnpm --filter @openhands-rl/conversation-api dev",
+    "dev:evaluation-api": "pnpm --filter @openhands-rl/evaluation-api dev",
+    "dev:worker": "pnpm --filter @openhands-rl/worker dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.2",
+    "aws4": "^1.13.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "prisma": "^6.5.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,6 @@
+id: local-workspace-v1
+workspace_root: null
+tool_allowlist:
+  - terminal
+  - file_editor
+approval_policy: default

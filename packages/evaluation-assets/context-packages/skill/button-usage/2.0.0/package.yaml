@@ -1,0 +1,10 @@
+name: button-usage
+version: 2.0.0
+kind: skill
+entry: context-packages/skill/button-usage/2.0.0/button-usage/SKILL.md
+description: Explicit guidance for replacing native buttons with the shared Button component.
+owner: frontend-platform
+tags:
+  - skill
+  - component
+  - button

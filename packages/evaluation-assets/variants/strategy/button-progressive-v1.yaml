@@ -1,0 +1,19 @@
+id: button-progressive-v1
+description: >
+  Comparison variant that adds a progressive Button usage skill with a packaged playbook reference.
+prompt_version: base-v1
+enabled_skills:
+  - repo-guide
+  - button-progressive
+  - finish-checklist
+model_profile: gpt-5-medium
+business_context_profile: frontend-domain-v1
+session_context_policy: session-basic-v1
+mcp_profile: default-v1
+sandbox_profile: local-workspace-v1
+case_bindings:
+  resource_filters:
+    include: []
+    exclude: []
+  skill_subset: []
+  task_notes: []

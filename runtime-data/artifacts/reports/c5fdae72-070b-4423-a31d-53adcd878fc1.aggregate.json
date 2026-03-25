@@ -1,0 +1,127 @@
+{
+  "mode": "business_fine_tuning",
+  "name": "button-skill-public-demo-v2-v4-r3-2026-03-25",
+  "status": "completed",
+  "run_count": 9,
+  "case_count": 1,
+  "experiment_id": "c5fdae72-070b-4423-a31d-53adcd878fc1",
+  "replica_count": 3,
+  "variant_count": 3,
+  "design_snapshot": {
+    "mode": "business_fine_tuning",
+    "cases": [
+      {
+        "id": "FE_BUTTON_01",
+        "name": "button-component-usage",
+        "project": "demo-shop",
+        "difficulty": "medium",
+        "source_path": "cases/frontend/skills/fe_button_01.yaml",
+        "task_family": "component-usage",
+        "tuning_axis": "skills",
+        "context_mode": "repo_context+skill_notes"
+      }
+    ],
+    "variants": [
+      {
+        "id": "ft-button-skill-v2",
+        "kind": "business_fine_tuning",
+        "description": "Keep the platform strategy fixed and only upgrade the button-usage skill package.",
+        "source_path": "variants/business-fine-tuning/ft-button-skill-v2.yaml",
+        "changed_axis": "baseline",
+        "package_refs": [
+          "repo-policy/frontend-base@1.0.0",
+          "skill/button-usage@2.0.0",
+          "skill/finish-checklist@1.0.0",
+          "skill/repo-guide@1.0.0"
+        ],
+        "model_profile": "gpt-5-medium",
+        "prompt_version": "base-v1",
+        "session_context_policy": "session-basic-v1",
+        "business_context_profile": "frontend-domain-v1"
+      },
+      {
+        "id": "ft-button-skill-v3",
+        "kind": "business_fine_tuning",
+        "description": "Keep the platform strategy fixed and switch button-usage to a keyword-triggered AgentSkills package.",
+        "source_path": "variants/business-fine-tuning/ft-button-skill-v3.yaml",
+        "changed_axis": "context_packages",
+        "package_refs": [
+          "repo-policy/frontend-base@1.0.0",
+          "skill/button-usage@3.0.0",
+          "skill/finish-checklist@1.0.0",
+          "skill/repo-guide@1.0.0"
+        ],
+        "model_profile": "gpt-5-medium",
+        "prompt_version": "base-v1",
+        "session_context_policy": "session-basic-v1",
+        "business_context_profile": "frontend-domain-v1"
+      },
+      {
+        "id": "ft-button-skill-v4",
+        "kind": "business_fine_tuning",
+        "description": "Keep the platform strategy fixed and upgrade button-usage to a stronger keyword-triggered AgentSkills package with explicit export and validation guidance.",
+        "source_path": "variants/business-fine-tuning/ft-button-skill-v4.yaml",
+        "changed_axis": "context_packages",
+        "package_refs": [
+          "repo-policy/frontend-base@1.0.0",
+          "skill/button-usage@4.0.0",
+          "skill/finish-checklist@1.0.0",
+          "skill/repo-guide@1.0.0"
+        ],
+        "model_profile": "gpt-5-medium",
+        "prompt_version": "base-v1",
+        "session_context_policy": "session-basic-v1",
+        "business_context_profile": "frontend-domain-v1"
+      }
+    ],
+    "changed_axes": {
+      "ft-button-skill-v3": "context_packages",
+      "ft-button-skill-v4": "context_packages"
+    },
+    "replica_count": 3,
+    "baseline_variant_id": "ft-button-skill-v2",
+    "comparison_variant_ids": [
+      "ft-button-skill-v3",
+      "ft-button-skill-v4"
+    ]
+  },
+  "skill_telemetry": {
+    "strategy_skill_records": [],
+    "package_skill_records": [
+      {
+        "name": "frontend-base",
+        "source": "packages/evaluation-assets/context-packages/repo-policy/frontend-base/1.0.0/AGENTS.md",
+        "trigger": null,
+        "description": "Base frontend repo policy for demo-shop tasks.",
+        "license": null,
+        "compatibility": null,
+        "metadata": null,
+        "allowed_tools": null,
+        "mcp_tools": null,
+        "is_agent_skills_format": false,
+        "resources": null,
+        "source_kind": "context_package",
+        "source_ref": "repo-policy/frontend-base@1.0.0",
+        "source_path": "packages/evaluation-assets/context-packages/repo-policy/frontend-base/1.0.0/AGENTS.md",
+        "package_kind": "repo-policy"
+      },
+      {
+        "name": "button-usage",
+        "source": "packages/evaluation-assets/context-packages/skill/button-usage/2.0.0/button-usage/SKILL.md",
+        "trigger": null,
+        "description": "Explicit page-level guidance for replacing native buttons with the shared Button component.",
+        "license": null,
+        "compatibility": null,
+        "metadata": null,
+        "allowed_tools": null,
+        "mcp_tools": null,
+        "is_agent_skills_format": true,
+        "resources": null,
+        "source_kind": "context_package",
+        "source_ref": "skill/button-usage@2.0.0",
+        "source_path": "packages/evaluation-assets/context-packages/skill/button-usage/2.0.0/button-usage/SKILL.md",
+        "package_kind": "skill"
+      }
+    ]
+  }
+}

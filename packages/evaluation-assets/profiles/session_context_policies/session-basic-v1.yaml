@@ -1,0 +1,5 @@
+id: session-basic-v1
+condenser:
+  type: none
+recent_failure_memory:
+  enabled: false

@@ -1,0 +1,10 @@
+name: button-usage
+version: 1.0.0
+kind: skill
+entry: context-packages/skill/button-usage/1.0.0/button-usage.md
+description: Legacy repo-context guidance for replacing native buttons with the shared Button component.
+owner: frontend-platform
+tags:
+  - skill
+  - component
+  - button

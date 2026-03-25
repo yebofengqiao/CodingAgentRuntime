@@ -1,0 +1,9 @@
+name: repo-guide
+version: 1.0.0
+kind: skill
+entry: context-packages/skill/repo-guide/1.0.0/repo-guide/SKILL.md
+description: Repo navigation hints for demo-shop.
+owner: frontend-platform
+tags:
+  - skill
+  - repo

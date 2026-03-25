@@ -1,0 +1,22 @@
+id: ft-button-skill-v4
+kind: business_fine_tuning
+description: >
+  Keep the platform strategy fixed and upgrade button-usage to a stronger keyword-triggered AgentSkills package with explicit export and validation guidance.
+prompt_version: base-v1
+model_profile: gpt-5-medium
+business_context_profile: frontend-domain-v1
+session_context_policy: session-basic-v1
+mcp_profile: default-v1
+sandbox_profile: local-workspace-v1
+context_packages:
+  - repo-policy/frontend-base@1.0.0
+  - skill/repo-guide@1.0.0
+  - skill/button-usage@4.0.0
+  - skill/finish-checklist@1.0.0
+case_bindings:
+  resource_filters:
+    include: []
+    exclude: []
+  package_subset: []
+  task_notes:
+    - Focus on whether the page uses the shared Button component correctly.

@@ -1,0 +1,59 @@
+id: FE_BUTTON_01
+name: button-component-usage
+project: demo-shop
+code_state_ref:
+  repo_path: repos/demo-shop
+  ref: main
+  install: []
+  env: {}
+requirement_bundle:
+  primary_requirement_doc: requirements/demo-shop/fe_button_01.md
+  acceptance_criteria:
+    - Replace the native button in the button lab page with the shared Button component.
+    - Keep the edit inside apps/demo-shop/** and .evaluation/**.
+    - Do not modify packages/ui/**.
+    - Result payload records the case id and variant id.
+  supporting_docs: []
+  api_contracts: []
+  design_notes: []
+  screenshots: []
+additional_prompt_docs:
+  - prompts/cases/frontend/fe_button_01.md
+task_family: component-usage
+difficulty: medium
+tuning_axis: skills
+context_mode: repo_context+skill_notes
+completion_checks:
+  - name: mock_result_exists
+    type: artifact_exists
+    path: .evaluation/mock-result.json
+  - name: button_component_usage
+    type: shell
+    command: node scripts/check-button-usage.js FE_BUTTON_01 apps/demo-shop/src/pages/button-lab/index.tsx
+  - name: mock_result_check
+    type: shell
+    command: node scripts/check-mock-result.js FE_BUTTON_01
+expected_artifacts:
+  - .evaluation/mock-result.json
+expected_keywords: []
+expected_skills:
+  - button-usage
+expected_tools:
+  - file_editor
+  - terminal
+scope:
+  editable_scope:
+    - apps/demo-shop/**
+    - .evaluation/**
+  protected_scope:
+    - packages/ui/**
+budgets:
+  max_steps: 20
+  max_wall_clock_seconds: 300
+  max_cost_usd: 0.3
+metadata:
+  owner: frontend-platform
+  tags:
+    - skills
+    - component
+    - button

@@ -1,0 +1,14 @@
+id: base-v1
+# This profile intentionally snapshots the runtime-core default system prompt into evaluation assets.
+# Evaluation should version and audit platform prompts here instead of reading runtime-core fallback text implicitly.
+system_template: prompts/system/base_system.md
+system_message_suffix_template: prompts/developer/base_task.md
+task_card:
+  enabled: false
+  include_sections: []
+finish_checklist:
+  enabled: true
+  items:
+    - Run relevant validation before finishing.
+    - Stay inside editable scope.
+    - Write the evaluation result payload before the final response.

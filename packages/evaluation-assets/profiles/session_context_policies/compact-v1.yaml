@@ -1,0 +1,9 @@
+id: compact-v1
+condenser:
+  type: event_summary_v1
+  max_events: 40
+  keep_first: 4
+  keep_recent: 12
+recent_failure_memory:
+  enabled: true
+  max_chars: 1200

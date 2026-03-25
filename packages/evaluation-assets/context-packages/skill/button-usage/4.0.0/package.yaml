@@ -1,0 +1,10 @@
+name: button-usage
+version: 4.0.0
+kind: skill
+entry: context-packages/skill/button-usage/4.0.0/button-usage/SKILL.md
+owner: frontend-platform
+summary: Strong keyword-triggered guidance for replacing the button-lab native button with the shared Button export.
+tags:
+  - skill
+  - component
+  - button
