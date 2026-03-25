@@ -133,7 +133,7 @@
 
 完整报告
 
-- [report.md](../../runtime-data/artifacts/reports/c5fdae72-070b-4423-a31d-53adcd878fc1.report.md)
+- [report.md](packages/runtime-data/artifacts/reports/c5fdae72-070b-4423-a31d-53adcd878fc1.report.md)
 - [`packages/evaluation-assets/demo/button-skill-public-demo.payload.json`](packages/evaluation-assets/demo/button-skill-public-demo.payload.json)
 
 ## 代码结构
